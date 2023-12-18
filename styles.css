@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+:root {
+    --cor-fundo: #161513;
+    --fonte-principal: 'Plus Jakarta Sans', sans-serif;
+    --cor-destaque: chartreuse;
+}
+
+html, body {
+    height: 100vh;
+    max-width: 100vw;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #161513;
+    display:flex;
+    align-items: center;
+    padding: 1%;
+    padding-left: 5%;
+    position: fixed;
+    width: 100%;
+    height: 4%;
+    top: 0;
+    gap:20%;
+    overflow: hidden; /* Evita que o conteúdo do cabeçalho ultrapasse seus limites */
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos na página */
+    border-bottom: 1px solid var(--cor-destaque);
+    box-shadow: 0 0 10px var(--cor-destaque); /* Sombra (cor RGBA com opacidade) */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 80px;
+}
+
+nav li {
+    display: inline;
+    font-size: 20px;
+}
+
+Nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+Nav a:hover {
+    color: var(--cor-destaque);
+}
+
+.letra_destaque {
+    color: var(--cor-destaque);
+}
+
+main {
+    margin-top: 12%; /* Ajuste para evitar que o conteúdo seja oculto pelo cabeçalho fixo */
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    
+}
+
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1919;
+    color: var(--cor-destaque);
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+section {
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+#sobre {
+    font-size: 30px;
+    padding-left: 5%;
+}
+
+#sobre h2 {
+    font-size: 60px;
+}
+
+#redes {
+    width: 800px;
+    height: 200px;
+    margin-top: 5%;
+    padding: 10px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 50px; 
+}
+
+.icone path {
+    transition: fill 0.5s ease;
+}
+
+.icone:hover path {
+    fill: var(--cor-destaque);
+}
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#projetos h2 {
+    font-size: 48px;
+}
+
+.card-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    gap: 40px;
+}
+
+.card {
+    width: 180px;
+    height: 280px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
